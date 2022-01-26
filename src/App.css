@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+ul > li{
+
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 70px;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
