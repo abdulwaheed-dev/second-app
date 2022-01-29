@@ -8,12 +8,12 @@ import NavBar from './components/NavBar';
 import Categories from './Categories';
 import CatOne from './CatOne';
 import CatTwo from './CatTwo';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
     <div className="container">
       <NavBar></NavBar>
-     {/* <Signup></Signup> */}
      <Routes>
        <Route path = '/' element={<Home />} />
        <Route path = 'about' element={<About />} />
@@ -22,6 +22,7 @@ function App() {
         <Route path = 'cat1' element={<CatOne />} />
         <Route path = 'cat2' element={<CatTwo />} />
        </Route>
+       <Route path='*' element={<NotFound/>}/>
      </Routes>
     </div>
   );
