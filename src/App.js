@@ -9,6 +9,9 @@ import Categories from './Categories';
 import CatOne from './CatOne';
 import CatTwo from './CatTwo';
 import NotFound from './components/NotFound';
+import Products from './components/Products';
+import Pen from './Pen';
+import Books from './Books';
 
 function App() {
   return (
@@ -21,6 +24,10 @@ function App() {
        <Route path = 'categories' element={<Categories/>} >
         <Route path = 'cat1' element={<CatOne />} />
         <Route path = 'cat2' element={<CatTwo />} />
+       </Route>
+       <Route path='products/:prodId' element={<Products/>}>
+        <Route path = 'pen' element={<Pen/>} />
+        <Route path = 'books' element={<Books/>} />
        </Route>
        <Route path='*' element={<NotFound/>}/>
      </Routes>

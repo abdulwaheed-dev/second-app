@@ -5,8 +5,9 @@ function NavBar(){
         <ul>
             <li><NavLink to='/'>HOME</NavLink></li>
             <li><NavLink to='/about'>ABOUT</NavLink></li>
-            <li><NavLink to='signup'>SIGNUP</NavLink></li>
-            <li><NavLink to='categories'>CATEGORIES</NavLink></li>
+            <li><NavLink to='/signup'>SIGNUP</NavLink></li>
+            <li><NavLink to='/categories'>CATEGORIES</NavLink></li>
+            <li><NavLink to='/products'>PRODUCTS</NavLink></li>
         </ul>
     </>)
 }
